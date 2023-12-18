@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Husky Card</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+</head>
+<body>
+    <header class="header">
+        <img src="https://i.pinimg.com/564x/1d/75/9f/1d759f0ab135ba3ed4100fa2ab937a22.jpg"class="husky logo"/>
+        <h1 class="header__title">Husky Card</h1>
+        <ul>
+            <li class="header-Home"> <a href="#" class="header__link">Home</a></li>
+            <li class="header-Menu"> <a href="#" class="header__link">Menu</a></li>
+            <li class="header-Contact"> <a href="#" class="header__link">Contact</a></li>
+        </ul>
+
+    </header>
+    <main class="main">
+        <form id="form" action="/register" method="POST" class="form">
+        
+            <div class="test">
+            <label for="name">Name: <span class="required-asterisk">*</span></label>
+            <input class="name" type="text" id="name" name="name">
+            <small class="error" id="name-error" style="visibility: hidden;">Name is required</small>
+        </div>
+            
+
+        <div class="test">
+        <label for="email">Email: <span class="required-asterisk">*</span></label>
+        <input class="email" type="text" id="email" name="email">
+        <small class="error" id="email-error" style="visibility: hidden;">Enter Email</small>
+    </div>
+
+
+    <div class="test">
+        <label for="confirm-email">email2: <span class="required-asterisk">*</span></label>
+        <input class="email2" type="text" id="email2" name="email2">
+         <small class="error" id="confirm-email-error2" style="visibility: hidden;">Email Mismatch</small>
+    </div>
+    
+    
+        <div class="test">
+         <label>click on checkbox to recive Email</label>
+            <input type="checkbox" id="spam" name="spam">
+        </div>
+
+        <div class="test">
+        <label for="tier">Select Student Tier: <span class="required-asterisk">*</span></label>
+        <select id="tier" name="tier">
+            <option value="Please-Select">Please Select</option>
+            <option value="FirstYear">First Year</option>
+            <option value="SecondYear">Second Year</option>
+            <option value="Completed">Completed</option>
+        </select>
+        <small class="error" id="tier-error" style="visibility: hidden;">Tier must be selected</small>
+        </div>
+
+        <button type="submit" class="button">Register</button>
+        <p>Note: <span class="required-asterisk">* </span>You have to fill all asterisk * box</p>
+    </form>
+</main>
+
+<footer class="footer">
+    
+        
+        <a href="#">© 2023 Your Website</a> 
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service, By using this website, you agree to our.</a>
+         
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

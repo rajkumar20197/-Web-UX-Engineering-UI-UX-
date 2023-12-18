@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Form</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header class="header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2NTPT1Noh4XQvsJ5ZIu1MRVU54_VyVeU78Q&usqp=CAU"class="logo" alt="freelancer logo"/>
+    
+        <h1 class="header__title">Freelancer Form</h1>
+        <nav class="header__menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Search</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    <main class="main">
+         
+        <form action="/submit" method="POST">
+            <label for="name">Name<span class="required__label">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Type your name" required>
+    
+            <label for="Email">Email<span class="required__label">*</span></label>
+            <input type="Email" id="Email" name="Email" placeholder="Type your Email" required>
+
+            <input type="checkbox" id="annoy_me" name="annoy_me" checked>
+            <label for="annoy_me">Do you want us to send you annoying emails?</label>
+
+            <label for="tier">Select Tier<span class="required__label">*</span></label>
+            <select id="tier" name="tier">
+                <option value="Please-Select">Please Select</option>
+                <option value="silver Tier">Silver Tier</option>
+                <option value="gold Tier">Gold Tier</option>
+                <option value="platinum Tier">Platinum Tier</option>
+            </select>
+    
+            <button class="register__btn" type="submit">Register</button>
+            <p class="form_note"><span class="required__label">*</span> 
+                <i>Required fields</i></p>
+        </form>
+        
+        
+        
+     
+       
+    </main>
+   
+ <footer class="footer">
+            <a href="#">Registered users</a> 
+            <a href="#">Total Jobs</a>
+            <a href="#">By using this website, you agree to our.</a>
+            <a href="#">Privacy Policy.</a>
+    </footer>
+    
+</body>
+</html>
