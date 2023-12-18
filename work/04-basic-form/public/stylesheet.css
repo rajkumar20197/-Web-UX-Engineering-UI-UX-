@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html body{
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.header {
+    justify-content: space-between;
+    background-color:goldenrod;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    
+
+}
+.header .logo {
+   height: auto;
+   width: 100px;
+}
+
+
+.header__menu ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.header__menu li a {
+    color: blanchedalmond;
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+.header__menu li i{
+    vertical-align: text-top;
+
+    
+}
+.header__menu li a:hover {
+    color: greenyellow;
+}
+
+
+main{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form {
+    margin: 0 auto;
+    max-width: 750px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    align-items: center;
+    background-color: bisque;
+    border: 1px solid red;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.form input[type="checkbox"] {
+    height: 30px;
+    width: auto;
+}
+.form select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+.register__btn {
+    grid-column: span 2;
+    text-align: center;
+    cursor: pointer;
+    padding: 4px;
+    background-color: orangered;
+    border-radius: 6px;
+    color: black;
+}
+.register__btn:hover {
+    color: white;
+    background-color: green;
+}
+footer a {
+    color:black;
+}
+.required__label {
+    color: red;
+    display: contents;
+}
+p {
+    font-size: 12px;
+}
+
+
+
+.footer{
+    background-color: goldenrod;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    color: white;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+
+
+@media (max-width: 800px) {
+    .header {
+        display: block;
+    }
+
+    .header__menu ul {
+        display: block;
+    }
+    .header__title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+   
+    form {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10;
+        max-width: 350px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+   form input {
+        margin-bottom: 20px;
+
+    }
+    form select {
+        margin-bottom: 15px;
+
+    }
+    form input[type="checkbox"]{
+        margin-left: -90%;
+    }
+    .register__btn {
+        grid-column: span 1;
+        margin-bottom: 10px;
+    }
+}
+

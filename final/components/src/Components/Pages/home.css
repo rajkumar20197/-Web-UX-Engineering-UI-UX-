@@ -1,0 +1,156 @@
+.home {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    min-height: 100vh;
+}
+
+
+
+.img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+}
+
+.homeContent {
+    width: 100%;
+    height: max-content;
+    
+    padding: 2rem;
+    display: flex;
+    row-gap: 3rem;
+    flex-direction: column;
+    align-items: stretch;
+    margin: auto;
+    color: rgb(16, 1, 1);
+    z-index: 100;
+    margin-top: 0;
+}
+
+.textDiv {
+    padding: 2rem 0;
+    margin-top: 0.5rem;
+}
+
+.smallText {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.homeTitle {
+    position: relative;
+    font-size: 1.8rem;
+}
+
+.cardDiv {
+    position: relative;
+    padding: 2rem 1rem;
+    background: rgb(233, 143, 143);
+    border-radius: 0.6rem;
+    gap: 1rem;
+}
+
+.label {
+    display: block;
+    /* color: var(--textColor); */
+    padding-bottom: 0.6rem;
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.label_total {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toal {
+    /* color: var(--textColor); */
+    font-size: 1.25rem;
+    padding-bottom: 0.6rem;
+}
+
+.input {
+    height: 2.5rem;
+    padding: 0 1rem;
+    /* background: var(--inputcolor); */
+    border-radius: 3rem;
+
+    input {
+        background: none;
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 0.8rem;
+        /* font-weight: 500; */
+
+        &::placeholder {
+            font-size: 0.8rem;
+        }
+    }
+
+    
+    .input[type=range] {
+        background: rgb(64, 64, 205);
+    }
+}
+
+.searchOptions {
+    position: absolute;
+    /* background: var(--gradientcolor); */
+    width: max-content;
+    bottom: -0.75rem;
+    column-gap: 0.8rem;
+    padding: .313rem 1rem;
+    border-radius: 3rem;
+    left: 50%;
+    transform: translate(-50%);
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+        background-color: white;
+    }
+
+    .icon {
+        font-size: 1.25rem;
+    }
+
+    span {
+        font-size: .8rem;
+
+    }
+}
+
+
+.btn-filter {
+    width: 20em;
+    align-self: center;
+}
+@media screen and (max-width: 48rem) {
+ .btn-filter{
+    margin-right: 0%;
+    width: fit-content;
+ }
+ input{
+    font-size: 60%;
+ }
+
+ .label_total{
+    width: fit-content;
+ }
+ .input-flex{
+    width: min-content;
+
+ .input-name{
+    width: fit-content;
+    color: darkgreen;
+ }
+
+}}
